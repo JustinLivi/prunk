@@ -78,3 +78,11 @@ const test = async () => {
   }
 };
 ```
+
+# Why Prunk?
+
+props/promise + func/thunk = prunk
+
+# License
+
+Licensed under [MIT](https://github.com/JustinLivi/prunk/blob/master/LICENSE)

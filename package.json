@@ -5,9 +5,8 @@
   "main": "build/index.js",
   "scripts": {
     "test": "jest --watch",
-    "build": "tsc && ts-node ./scripts/addHeader.ts",
+    "build": "tsc",
     "cover": "jest --coverage",
-    "dtslint": "dtslint types",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'",
     "preversion": "npm run cover && npm run tslint && npm run build && npm run dtslint && git add -A",
     "release": "np"

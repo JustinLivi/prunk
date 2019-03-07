@@ -75,3 +75,5 @@ export const unprunkWithProps = <Props>(props: Props) =>
       throw error;
     }
   };
+
+export default unprunkWithProps;

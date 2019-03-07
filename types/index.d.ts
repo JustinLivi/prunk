@@ -33,3 +33,4 @@ export declare const awaitMap: <T>(dictionary: Dictionary<Promise<T>>) => Promis
  * @param props The properties to pass to prunkFuncs
  */
 export declare const unprunkWithProps: <Props>(props: Props) => <Result>(prunk: Prunk<Props, Result>) => Promise<Result>;
+export default unprunkWithProps;

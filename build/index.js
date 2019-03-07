@@ -116,4 +116,5 @@ exports.unprunkWithProps = function (props) {
         });
     }); };
 };
+exports.default = exports.unprunkWithProps;
 //# sourceMappingURL=index.js.map

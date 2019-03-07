@@ -8,7 +8,7 @@
     "build": "tsc",
     "cover": "jest --coverage",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'",
-    "preversion": "npm run cover && npm run tslint && npm run build && npm run dtslint && git add -A",
+    "preversion": "npm run cover && npm run tslint && npm run build && git add -A",
     "release": "np"
   },
   "repository": {

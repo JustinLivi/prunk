@@ -1,0 +1,42 @@
+{
+  "name": "prunk",
+  "version": "0.1.0",
+  "description": "Prunk utils",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "cover": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustinLivi/prunk.git"
+  },
+  "keywords": [
+    "thunk",
+    "config",
+    "property"
+  ],
+  "author": "Justin Livi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JustinLivi/prunk/issues"
+  },
+  "homepage": "https://github.com/JustinLivi/prunk#readme",
+  "dependencies": {
+    "@types/lodash": "^4.14.122",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.6",
+    "@types/node": "^11.10.5",
+    "jest": "^24.1.0",
+    "jest-extended": "^0.11.1",
+    "npm": "^6.8.0",
+    "prettier": "^1.16.4",
+    "ts-jest": "^24.0.0",
+    "tslint": "^5.13.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.3.3333"
+  }
+}

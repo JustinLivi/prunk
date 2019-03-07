@@ -28,8 +28,8 @@ export type Prunk<Props, Result> =
 
 # Why would I want to use a prunk?
 
-Prunks are mostly useful when accepting configuration for a component or library that will provide logical defaults but may externalize a large portion of business logic.
-They're a sort of opt-in callback, where you can either provide a known static value, or provide a callback to add more complex logic to determine what that value should be.
+Prunks are mostly useful when accepting configuration for a component or library that may externalize a large portion of business logic based on values not known at the time of configuration.
+They're a sort of opt-in callback, where you can either provide a known static value, or provide a callback to defer configuration or add more complex logic.
 
 TODO: add some examples here demonstrating use cases
 

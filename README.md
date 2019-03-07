@@ -35,14 +35,14 @@ TODO: add some examples here demonstrating use cases
 
 # Installation
 
-`npm i -s prunk`
+`npm i -s unprunk`
 
 Both typescript and javascript support come out of the box.
 
 # Usage
 
 ```javascript
-import unprunkWithProps from 'prunk';
+import unprunkWithProps from 'unprunk';
 
 const test = async () => {
   try {

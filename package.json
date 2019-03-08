@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "What the funk is a prunk?",
   "main": "build/index.js",
+  "types": "types",
   "scripts": {
     "test": "jest --watch",
     "build": "tsc",

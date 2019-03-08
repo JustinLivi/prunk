@@ -10,7 +10,7 @@
     "cover": "jest --coverage",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'",
     "preversion": "npm run cover && npm run tslint && npm run build && git add -A",
-    "release": "np"
+    "release": "np --yolo"
   },
   "repository": {
     "type": "git",

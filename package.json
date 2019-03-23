@@ -5,12 +5,13 @@
   "main": "build/index.js",
   "types": "types",
   "scripts": {
-    "test": "jest --watch",
+    "test": "jest --coverage && npm run tslint",
+    "watch": "jest --watch",
     "build": "tsc",
-    "cover": "jest --coverage",
+    "cover": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'",
-    "preversion": "npm run cover && npm run tslint && npm run build && git add -A",
-    "release": "np --yolo"
+    "preversion": "npm run build && npm run dtslint && git add -A",
+    "release": "np"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.6",
     "@types/node": "^11.10.5",
+    "coveralls": "^3.0.3",
     "jest": "^24.1.0",
     "jest-extended": "^0.11.1",
     "np": "^4.0.2",

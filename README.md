@@ -1,5 +1,7 @@
 # What the funk is a prunk?
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/JustinLivi/prunk.svg)](https://greenkeeper.io/)
+
 A Prunk is defined as the intersection of the following:
 
 - a Result

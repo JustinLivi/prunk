@@ -10,8 +10,8 @@
     "build": "tsc",
     "cover": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'",
-    "preversion": "npm run build && npm run dtslint && git add -A",
-    "release": "np"
+    "version": "npm run build && conventional-changelog -p eslint -i CHANGELOG.md -s -r 0 && git add -A",
+    "bump": "npm version --unsafe-perm $(conventional-recommended-bump -p eslint)"
   },
   "repository": {
     "type": "git",
@@ -29,22 +29,46 @@
   },
   "homepage": "https://github.com/JustinLivi/prunk#readme",
   "dependencies": {
-    "@types/lodash": "^4.14.122",
-    "lodash": "^4.17.11"
+    "@types/lodash": "4.14.122",
+    "lodash": "4.17.11"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.6",
-    "@types/node": "^11.10.5",
-    "coveralls": "^3.0.3",
-    "jest": "^24.1.0",
-    "jest-extended": "^0.11.1",
-    "np": "^4.0.2",
-    "npm": "^6.8.0",
-    "prettier": "^1.16.4",
-    "ts-jest": "^24.0.0",
-    "tslint": "^5.13.0",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-eslint-rules": "^5.4.0",
-    "typescript": "^3.3.3333"
+    "@types/jest": "24.0.6",
+    "@types/node": "11.10.5",
+    "conventional-changelog-cli": "2.0.17",
+    "conventional-changelog-eslint": "3.0.1",
+    "conventional-recommended-bump": "4.1.1",
+    "coveralls": "3.0.3",
+    "jest": "24.1.0",
+    "jest-extended": "0.11.1",
+    "npm": "6.8.0",
+    "prettier": "1.16.4",
+    "ts-jest": "24.0.0",
+    "tslint": "5.13.0",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-eslint-rules": "5.4.0",
+    "typescript": "3.3.3333"
+  },
+  "greenkeeper": {
+    "commitMessages": {
+      "addConfigFile": "Build: Add Greenkeeper config file",
+      "updateConfigFile": "Build: Update Greenkeeper config file",
+      "initialBadge": "Docs: Add Greenkeeper badge",
+      "initialDependencies": "Upgrade: Update dependencies",
+      "initialBranches": "Build: Whitelist greenkeeper branches",
+      "dependencyUpdate": "Upgrade: Update ${dependency} to version ${version}",
+      "devDependencyUpdate": "Upgrade: Update ${dependency} to version ${version}",
+      "dependencyPin": "Fix: Pin ${dependency} to ${oldVersion}",
+      "devDependencyPin": "Fix: Pin ${dependency} to ${oldVersion}",
+      "lockfileUpdate": "Upgrade: Update lockfile ${lockfilePath}"
+    },
+    "prTitles": {
+      "initialPR": "Update dependencies to enable Greenkeeper",
+      "initialPrBadge": "Add badge to enable Greenkeeper",
+      "initialPrBadgeOnly": "Add Greenkeeper badge",
+      "initialSubgroupPR": "Update dependencies for ${group}",
+      "basicPR": "Update ${dependency} to the latest",
+      "groupPR": "Update ${dependency} in group ${group} to the latest"
+    }
   }
 }

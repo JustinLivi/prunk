@@ -1,8 +1,19 @@
-# What the funk is a prunk?
+# Unprunk
 
+[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/justinlivi/prunk.svg)](https://gitlab.com/justinlivi/prunk/pipelines)
+[![Coverage Status](https://coveralls.io/repos/gitlab/justinlivi/prunk/badge.svg?branch=master&kill_cache=1)](https://coveralls.io/gitlab/justinlivi/prunk?branch=master)
+[![David](https://img.shields.io/david/justinlivi/prunk.svg)](https://github.com/JustinLivi/prunk/blob/master/package.json)
+[![NPM](https://img.shields.io/npm/l/unprunk.svg)](https://www.npmjs.com/package/unprunk)
+[![node](https://img.shields.io/node/v/unprunk.svg)](https://github.com/JustinLivi/prunk/blob/master/package.json)
+[![npm](https://img.shields.io/npm/v/unprunk.svg)](https://www.npmjs.com/package/unprunk)
 [![Greenkeeper badge](https://badges.greenkeeper.io/JustinLivi/prunk.svg)](https://greenkeeper.io/)
+[![npm type definitions](https://img.shields.io/npm/types/unprunk.svg)](https://github.com/JustinLivi/prunk/blob/master/package.json)
 
-A Prunk is defined as the intersection of the following:
+> What the funk is a prunk?
+
+A prunk is a special type of hook.
+
+From a types perspective a prunk is defined as the intersection of the following:
 
 - a Result
 - a function which accepts Props and returns a Result

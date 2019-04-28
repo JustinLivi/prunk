@@ -4,6 +4,9 @@
   "description": "What the funk is a prunk?",
   "main": "build/index.js",
   "types": "types",
+  "engines": {
+    "node": ">=8"
+  },
   "scripts": {
     "test": "jest --coverage && npm run tslint",
     "watch": "jest --watch",

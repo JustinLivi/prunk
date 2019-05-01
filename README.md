@@ -1,3 +1,8 @@
+⚠ You are viewing the `dev` branch of this repo, which is considered unstable. ⚠
+
+- For the most recent stable release visit the [master branch](https://github.com/JustinLivi/prunk/tree/master).
+- For a specific release select a tag from the branches menu.
+
 # Unprunk
 
 [![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/justinlivi/prunk.svg)](https://gitlab.com/justinlivi/prunk/pipelines)

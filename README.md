@@ -1,8 +1,3 @@
-⚠ You are viewing the `dev` branch of this repo, which is considered unstable. ⚠
-
-- For the most recent stable release visit the [master branch](https://github.com/JustinLivi/prunk/tree/master).
-- For a specific release select a tag from the branches menu.
-
 # Unprunk
 
 [![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/justinlivi/prunk.svg)](https://gitlab.com/justinlivi/prunk/pipelines)
@@ -16,9 +11,20 @@
 
 > What the funk is a prunk?
 
+---
+
+⚠ You are most likely viewing the `dev` branch of this repo, which is considered unstable. ⚠
+
+- For the most recent stable release visit the [master branch](https://github.com/JustinLivi/prunk/tree/master).
+- For a specific release select a tag from the branches menu.
+
+---
+
+# Overview
+
 A prunk is a special type of configuration whose values can be defined either statically or as dynamic hooks.
 
-# Why would I want to use a prunk?
+## Why would I want to use a prunk?
 
 Prunks are mostly useful when accepting configuration for a component or library that may externalize a large portion of business logic based on values not known at the time of configuration.
 They're a sort of opt-in callback, where you can either provide a known static value, or provide a callback to defer configuration or add more complex logic.

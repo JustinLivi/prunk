@@ -11,7 +11,7 @@
     "test": "jest --coverage && npm run tslint",
     "watch": "jest --watch",
     "build": "tsc",
-    "cover": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'",
     "version": "npm run build && conventional-changelog -p eslint -i CHANGELOG.md -s -r 0 && git add -A",
     "bump": "npm version --unsafe-perm $(conventional-recommended-bump -p eslint)"

@@ -1,5 +1,4 @@
 import { Dictionary, fromPairs, map, mapValues, toPairs } from 'lodash';
-import { isArray } from 'util';
 
 /**
  * A function that accepts values and returns a result or a promise that resolves with the result
@@ -92,7 +91,7 @@ export const unprunk = async <Values, Result>(
         ? await prunk
         : prunk;
     const unprunkValues = unprunkWithValues(values);
-    return isArray(value)
+    return Array.isArray(value)
       ? (Promise.all(map(value, unprunkValues)) as any)
       : ((typeof value === 'object'
           ? awaitMap(mapValues(value as any, unprunkValues))
@@ -128,7 +127,7 @@ export const unprunkSync = <Values, Result>(
       ? (prunk as PrunkFunc<Values, Result>)(values)
       : prunk;
   const unprunkValues = unprunkWithValuesSync(values);
-  return isArray(value)
+  return Array.isArray(value)
     ? (map(value, unprunkValues) as any)
     : ((typeof value === 'object'
         ? mapValues(value as any, unprunkValues)

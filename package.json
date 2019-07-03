@@ -36,8 +36,9 @@
     "lodash": "4.17.11"
   },
   "devDependencies": {
+    "@types/node": "11.13.9",
     "@types/jest": "24.0.15",
-    "conventional-changelog-cli": "2.0.17",
+    "conventional-changelog-cli": "2.0.21",
     "conventional-changelog-eslint": "3.0.1",
     "conventional-recommended-bump": "5.0.0",
     "coveralls": "3.0.4",

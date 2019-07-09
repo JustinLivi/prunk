@@ -33,7 +33,7 @@
   "homepage": "https://github.com/JustinLivi/prunk#readme",
   "dependencies": {
     "@types/lodash": "4.14.135",
-    "lodash": "4.17.11"
+    "lodash": "4.17.13"
   },
   "devDependencies": {
     "@types/node": "11.13.9",

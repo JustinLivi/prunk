@@ -6,7 +6,7 @@
 [![NPM](https://img.shields.io/npm/l/unprunk.svg)](https://www.npmjs.com/package/unprunk)
 [![node](https://img.shields.io/node/v/unprunk.svg)](https://github.com/JustinLivi/prunk/blob/master/package.json)
 [![npm](https://img.shields.io/npm/v/unprunk.svg)](https://www.npmjs.com/package/unprunk)
-[![Greenkeeper badge](https://badges.greenkeeper.io/JustinLivi/prunk.svg)](https://greenkeeper.io/)
+
 [![npm type definitions](https://img.shields.io/npm/types/unprunk.svg)](https://github.com/JustinLivi/prunk/blob/master/package.json)
 
 > What the funk is a prunk?

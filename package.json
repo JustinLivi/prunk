@@ -14,7 +14,9 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'",
     "version": "npm run build && conventional-changelog -p eslint -i CHANGELOG.md -s -r 0 && git add -A",
-    "bump": "npm version --unsafe-perm $(conventional-recommended-bump -p eslint)"
+    "bump": "npm version --unsafe-perm $(conventional-recommended-bump -p eslint)",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -33,7 +35,8 @@
   "homepage": "https://github.com/JustinLivi/prunk#readme",
   "dependencies": {
     "@types/lodash": "4.14.150",
-    "lodash": "4.17.15"
+    "lodash": "4.17.15",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/node": "13.9.1",
@@ -50,5 +53,6 @@
     "tslint-config-prettier": "1.18.0",
     "tslint-eslint-rules": "5.4.0",
     "typescript": "3.3.3333"
-  }
+  },
+  "snyk": true
 }

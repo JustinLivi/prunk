@@ -36,7 +36,7 @@
   "dependencies": {
     "@types/lodash": "4.14.150",
     "lodash": "4.17.15",
-    "snyk": "^1.316.2"
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "@types/node": "13.9.1",

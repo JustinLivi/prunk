@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/JustinLivi/prunk#readme",
   "dependencies": {
-    "@types/lodash": "4.14.150",
+    "@types/lodash": "4.14.151",
     "lodash": "4.17.15",
     "snyk": "^1.316.2"
   },
